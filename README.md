@@ -1,5 +1,4 @@
 # tf_multigpu_template
-tf_multigpu_cls_template
 A basic sample of tensorflow multi-gpu project for classification using mobilenet-V2. This script is test on  with 
 
 ## Contents: 
