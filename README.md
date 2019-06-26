@@ -1,5 +1,5 @@
 # tf_multigpu_template
-A basic sample of tensorflow multi-gpu project for classification using mobilenet-V2. This script is test on  with 
+A basic sample of tensorflow multi-gpu project for classification using mobilenet-V2.
 
 ## Contents: 
 - datasets: load training data use `tf.data.Dataset`
