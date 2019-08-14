@@ -132,11 +132,11 @@ def main():
 
         #Build network on multi-gpu with the same graph
         with tf.variable_scope(tf.get_variable_scope()):
-            for i, gpu_id in enumerate(gpu_list):
+            for i in range(len(gpu_list)):
                 #build same graph on each gpu
-                with tf.device('/gpu:%d'%gpu_id):
+                with tf.device('/gpu:%d'%i):
                     # to distinguish variable in different gpu
-                    with tf.name_scope('model_%d'%gpu_id):
+                    with tf.name_scope('model_%d'%i):
                         if i==0:
                             train_image_instances, train_label = train_dataloader.get_one_batch()
                             train_image_instances = tf.to_float(train_image_instances)
